@@ -1,6 +1,67 @@
-button,
-    div,
-    form,
-    input {
-      margin: 10px;
-    }
+body {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+  background-color: whitesmoke;
+  background-image: url("../images/backgrounds-blank-blue-953214.jpg");
+  background-repeat: repeat-x;
+  background-color: #cccccc;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+header {
+  height: 120px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  color: black;
+  border-radius: 5px;
+}
+
+.gifs-container {
+  flex-grow: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.gif-frame {
+  flex: 1 1 auto;
+  position: relative;
+  width: 280px;
+  margin: 8px;
+  align-items: center;
+}
+
+.gif-frame .active-gif {
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+.gif-frame img {
+  width: 95%;
+  max-height: 300px;
+  border-radius: 4px;
+}
+
+.content-box {
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray;
+  margin: 10px;
+}
+
+#gif-form {
+  margin: 10px;
+}
+
+#gif-input {
+  color: black;
+}

@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giffy Getter</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giffy Grabber</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Rubik:900&display=swap" rel="stylesheet"/>
-</head>
-<body>
-    <div class="container">
-        <h1>Movie Search</h1>
-    
-        <!-- Movies will get dumped here -->
-        <div id="buttons-view"></div>
-    
-        <form id="movie-form">
-          <label for="movie-input">Add a Movie, Yo!</label>
-          <input type="text" id="movie-input"><br>
-    
-          <!-- Button triggers new movie to be added -->
-          <input id="add-movie" type="submit" value="Add a Movie, Yo!">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-box drop-shadow">
+        <div class="logo-box-content"><h1>Giffy Grabber</h1></div>
+      </div>
+    </header>
+    <div class="button-box drop-shadow">
+      <button type="button" class="btn btn-default">Cats</button>
+      <button type="button" class="btn btn-default">Dogs</button>
+      <button type="button" class="btn btn-default">Fish</button>
+      <button type="button" class="btn btn-default">Ducks</button>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="content-box drop-shadow">
+      <aside class="side-box">
+        <form id="gif-form">
+          <label for="gif-search-input">Pick a topic</label>
+          <input type="text" id="gif-input" />
+          <br />
+          <!-- Button  -->
+          <button id="add-gif" type="submit">Search</button>
         </form>
-</body>
+      </aside>
+      <div class="gifs-container">
+        <!--Gifs display here  -->
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/giffy.js" charset="utf-8"></script>
+  </body>
 </html>
